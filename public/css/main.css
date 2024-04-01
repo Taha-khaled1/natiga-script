@@ -1,0 +1,197 @@
+body {
+  font-family: 'Amiri', serif;
+  direction: rtl;
+  text-align: center;
+  font-size: 24px;
+}
+
+.upper-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Added for vertical alignment */
+}
+
+.logo-barcode {
+  margin-top: 10px;
+}
+
+.logo-barcode a {
+  background-color: white;
+  text-decoration: none;
+}
+
+.logo-barcode img {
+  width: 100px;
+  height: 100px;
+}
+
+.trip-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trip-info div span {
+  color: rgb(255, 165, 0);
+  background-color: black;
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 5px 4px;
+  text-align: center;
+  font-size: 17px;
+  width: 95px;
+  display: inline-block;
+}
+
+.passngers-span {
+  padding: 15px 30px;
+}
+
+.trip-info div input {
+  max-width: 110px;
+  padding: 3px;
+  font-size: 17px;
+  border-radius: 5px;
+  outline: none;
+  margin: 0px 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .passngers {
+    margin-top: 4px;
+  }
+
+  .passngers-span {
+    padding: 10px;
+  }
+
+  .taken-value {
+    max-width: 100px;
+  }
+
+  .allocate,
+  .date {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .trip-info div span {
+    margin-bottom: 3px;
+  }
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+.datex {
+  display: block;
+}
+
+.logo-footer {
+  transform: translateY(-70px);
+}
+
+@media (max-width: 1200px) {
+  .logo-footer {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  table {
+    width: 600px !important;
+  }
+}
+
+.customer-details td {
+  width: calc(100% / 6);
+}
+
+.test {
+  width: 650px;
+}
+
+.xog {
+  margin-left: 600px;
+}
+
+.xmarg {
+  margin-top: 15px;
+}
+
+.floating-button {
+  left: 13px;
+  bottom: 13px;
+  right: unset;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+
+  svg {
+    width: 30px;
+  }
+}
+
+.image-container img {
+  width: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    flex-wrap: nowrap;
+  }
+
+  .image-container img {
+    width: 500px;
+  }
+}
+
+@media print {
+  table.main-table {
+    font-size: 18px;
+    margin: 4px;
+    /* Corrected margin value */
+    padding: 4px;
+  }
+
+  table.main-table th,
+  table.main-table td {
+    padding: 6px 10px;
+  }
+
+  .xog {
+    margin-left: 0;
+    /* Adjusted margin for print */
+  }
+
+  .test {
+    width: 100%;
+    /* Full width for print */
+  }
+
+  .fixed-bottom {
+    display: none !important;
+  }
+
+  @page {
+    size: A3;
+    margin: 0;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    background-color: #fff;
+    width: 29.7cm;
+    height: 42cm;
+  }
+}
+
+@page {
+  size: A3;
+  margin: 0;
+}
